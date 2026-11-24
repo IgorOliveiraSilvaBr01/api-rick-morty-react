@@ -1,0 +1,63 @@
+.error-card {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2.2rem 1.8rem;
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.error-card.is-failure {
+  background: rgba(45, 17, 24, 0.7);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.error-card.is-not-found {
+  background: rgba(22, 27, 43, 0.8);
+  border: 1px solid rgba(0, 181, 204, 0.4);
+}
+
+.error-icon-wrapper {
+  font-size: 2.8rem;
+  line-height: 1;
+}
+
+.error-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 0.5rem;
+}
+
+.error-message {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.retry-button {
+  margin-top: 0.5rem;
+  background: #97ce4c;
+  color: #0b0e17;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: none;
+  padding: 0.75rem 1.4rem;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.retry-button:hover {
+  background: #b2e863;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(151, 206, 76, 0.4);
+}
