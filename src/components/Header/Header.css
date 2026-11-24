@@ -1,0 +1,49 @@
+.header {
+  background: linear-gradient(180deg, rgba(16, 20, 36, 0.95) 0%, rgba(10, 12, 22, 0.8) 100%);
+  border-bottom: 1px solid rgba(151, 206, 76, 0.25);
+  padding: 3rem 1rem 2.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 450px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(151, 206, 76, 0.2) 0%, rgba(0, 181, 204, 0.1) 50%, transparent 80%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.header-title {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0 0 0.5rem;
+  text-shadow: 0 0 20px rgba(151, 206, 76, 0.4), 0 0 40px rgba(0, 181, 204, 0.2);
+}
+
+.header-title .ampersand {
+  color: #00b5cc;
+  text-shadow: 0 0 15px rgba(0, 181, 204, 0.6);
+}
+
+.header-subtitle {
+  color: #a0aec0;
+  font-size: 1.15rem;
+  margin: 0 auto;
+  max-width: 580px;
+}
